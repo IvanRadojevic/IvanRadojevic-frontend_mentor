@@ -2,9 +2,7 @@
     const cardList = document.querySelector(".card-list");
     const projectArr = [
         ["four-card-feature-section-master", 'HTML,CSS'],
-        ["base-apparel-coming-soon-master", 'HTML,CSS,JS'],
-        ["four-card-feature-section-master", 'HTML,CSS'],
-
+        ["base-apparel-coming-soon-master", 'HTML,CSS,JS']
     ]
 
     projectArr.forEach((project, index) => {

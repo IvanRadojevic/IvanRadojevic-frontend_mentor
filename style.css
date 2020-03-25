@@ -79,7 +79,7 @@ body {
 /*
 Switch  button*/
 .switch {
-    margin-top: 15px;
+    margin-top: 10px;
     position: relative;
     display: inline-block;
     width: 5rem;
@@ -202,7 +202,7 @@ input:checked+.slider:before {
 
     display: inline-block;
     width: 100%;
-    padding-top: 6px;
+    padding-top: 8px;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.2rem;
