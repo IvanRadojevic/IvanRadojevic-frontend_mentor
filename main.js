@@ -1,3 +1,4 @@
+//dinamicly add finished project as cards
 {
     const cardList = document.querySelector(".card-list");
     const projectArr = [
@@ -30,9 +31,6 @@
 
         link.appendChild(text);
         card.appendChild(link);
-
-
-
     });
 
     function makeTitleCards(name) {
@@ -41,27 +39,39 @@
                 .toUpperCase() + word.substr(1))
             .join(' ');
     }
-
 }
 
 {
+    // change theme
     const checkBox = document.querySelector('.switch');
-    const label = document.querySelector('.span-t');
     const input = document.querySelector('#changeColor')
     checkBox.addEventListener('click', changeTheme)
+    const themeWhite = ['white', '#242424', '#f6f6f6'];
+    const themeBlack = ['black', '#f6f6f6', '#242424'];
 
+    if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', JSON.stringify(themeWhite));
+        document.documentElement.style.setProperty(`--color-gray-1`, themeWhite[1]);
+        document.documentElement.style.setProperty(`--color-gray-2`, themeWhite[2]);
+    }
+
+    if (!JSON.parse(localStorage.getItem('theme'))[0].includes('white')) {
+        input.checked = true;
+        document.documentElement.style.setProperty(`--color-gray-1`, themeBlack[1]);
+        document.documentElement.style.setProperty(`--color-gray-2`, themeBlack[2]);
+    }
 
 
     function changeTheme() {
-        console.dir(input);
-
         if (input.checked === false) {
-            document.documentElement.style.setProperty(`--color-gray-1`, '#fff');
-            document.documentElement.style.setProperty(`--color-gray-2`, '#242424');
+            localStorage.setItem('theme', JSON.stringify(themeBlack));
+            document.documentElement.style.setProperty(`--color-gray-1`, `${themeBlack[1]}`);
+            document.documentElement.style.setProperty(`--color-gray-2`, `${themeBlack[2]}`);
 
         } else {
-            document.documentElement.style.setProperty(`--color-gray-1`, '#242424');
-            document.documentElement.style.setProperty(`--color-gray-2`, '#fff');
+            localStorage.setItem('theme', JSON.stringify(themeWhite));
+            document.documentElement.style.setProperty(`--color-gray-1`, `${themeWhite[1]}`);
+            document.documentElement.style.setProperty(`--color-gray-2`, `${themeWhite[2]}`);
 
         }
         input.checked = !input.checked
