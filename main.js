@@ -1,9 +1,10 @@
-//dinamicly add finished project as cards
+//dynamically add finished project as cards
 {
     const cardList = document.querySelector(".card-list");
     const projectArr = [
-        ["four-card-feature-section-master", 'HTML,CSS'],
-        ["base-apparel-coming-soon-master", 'HTML,CSS,JS']
+        ["four-card-feature-section-master", 'HTML,SCSS'],
+        ["base-apparel-coming-soon-master", 'HTML,SCSS,JS'],
+        ["intro-component-with-signup-form-master", 'HTML,SCSS,JS'],
     ]
 
     projectArr.forEach((project, index) => {

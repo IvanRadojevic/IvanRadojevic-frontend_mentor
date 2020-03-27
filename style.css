@@ -5,6 +5,7 @@
     --color-gray-2: #f6f6f6;
     --color-orange: #E18A07;
     font-size: 62.5%;
+
 }
 
 *,
@@ -218,14 +219,13 @@ input:checked+.slider:before {
 
 .text {
     margin: 0 auto;
-    max-width: 60vw;
+    max-width: 80vw;
     text-align: justify;
     line-height: 1.6;
 }
 
 .text a {
     display: inline-block;
-
     background-color: var(--color-gray-1);
     padding: 1px 4px;
     color: var(--color-gray-2);
@@ -352,9 +352,9 @@ input:checked+.slider:before {
     }
 
     p.text {
-        padding: 0rem;
-        text-align: center;
-        width: 100%;
+        padding: 3rem 1rem 3rem 2rem;
+        max-width: 100%;
+        margin: 0;
 
     }
 
