@@ -1,6 +1,6 @@
 # FrontEnd Mentor Challenges
 
-Welcome and thanks for checking out this project for the front-end coding challenge. Challenge is all about building projects so they look as close as possible as a given design.The goal of this project is to improve my coding skills so don't hesitate to point out my bad practice in by sending a feedback
+Welcome and thanks for checking out this project for the front-end coding challenge. Challenge is all about building projects so they look as close as possible as a given design.The goal of this project is to improve my coding skills so don't hesitate to point out my bad practice by sending a feedback
 
 All finished challenges can be seen on this [link][1]
 
