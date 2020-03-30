@@ -2,9 +2,10 @@
 {
     const cardList = document.querySelector(".card-list");
     const projectArr = [
-        ["four-card-feature-section-master", 'HTML,SCSS'],
-        ["base-apparel-coming-soon-master", 'HTML,SCSS,JS'],
-        ["intro-component-with-signup-form-master", 'HTML,SCSS,JS'],
+        ["four-card-feature-section-master", 'HTML,CSS'],
+        ["base-apparel-coming-soon-master", 'HTML,CSS,JS'],
+        ["intro-component-with-signup-form-master", 'HTML,CSS,JS'],
+        ["single-price-grid-component-master", 'HTML,CSS'],
     ]
 
     projectArr.forEach((project, index) => {
@@ -28,7 +29,7 @@
         imgContainer.appendChild(img);
 
         const text = document.createElement('h2');
-        text.innerText = `#${index+1} ${makeTitleCards(project[0])}`
+        text.innerText = `#${(index + 1).toString().padStart(2, '0')} ${makeTitleCards(project[0])}`
 
         link.appendChild(text);
         card.appendChild(link);

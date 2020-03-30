@@ -38,7 +38,7 @@ body {
     height: auto;
     position: fixed;
     right: 0;
-    top: 40%;
+    top: 45vh;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -212,14 +212,14 @@ input:checked+.slider:before {
 
 
 .heading {
-    padding: 8rem 2rem 4rem 2rem;
+    padding: 9rem 2rem 7rem 2rem;
     text-transform: uppercase;
     text-align: center;
 }
 
 .text {
-    margin: 0 auto;
-    max-width: 80vw;
+    margin: 5rem auto;
+    max-width: 70vw;
     text-align: justify;
     line-height: 1.6;
 }
@@ -295,22 +295,20 @@ input:checked+.slider:before {
     overflow: hidden;
     max-height: 18rem;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     transition: all .2s ease;
     filter: grayscale(1) contrast(1.2);
 
 }
 
 .link:hover .img-container {
-    transform: scale(.85);
-    filter: grayscale(.3) contrast(1.2);
-    outline: 2px solid var(--color-gray-1);
-    outline-offset: 2rem;
+    filter: grayscale(0) contrast(1);
+}
+
+.link:hover .bg-img {
+    transform: scale(1.09);
 
 }
+
 
 
 
@@ -320,22 +318,27 @@ input:checked+.slider:before {
     height: 100%;
     background-size: cover;
     background-position: center;
+    transition: all .2s ease;
 
 }
 
 @media only screen and (max-width: 700px) {
-    .img-container {
-        transform: scale(1);
-        filter: grayscale(0) contrast(1);
-        outline: none;
-    }
+
 
     .link:hover .img-container {
         transform: scale(1);
         filter: grayscale(0) contrast(1);
-        outline: none;
-        outline-offset: 0;
     }
+
+    .img-container {
+
+        filter: grayscale(0) contrast(1);
+
+    }
+
+
+
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -343,20 +346,17 @@ input:checked+.slider:before {
         font-size: 1.5rem;
     }
 
-
+    .icons-container {
+        top: 60vh;
+        transform: scale(.85);
+    }
 
     .heading {
-        padding: 5rem 2rem 3rem 2rem;
+        padding: 4rem 3rem 4rem 3rem;
         text-transform: uppercase;
         text-align: center;
     }
 
-    p.text {
-        padding: 3rem 1rem 3rem 2rem;
-        max-width: 100%;
-        margin: 0;
-
-    }
 
     .card-list {
         display: flex;
