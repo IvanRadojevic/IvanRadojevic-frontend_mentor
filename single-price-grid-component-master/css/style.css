@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700&display=swap");
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  border-radius: 9px;
+  overflow: hidden;
+  max-width: 63.5rem;
+  display: flex;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  flex-flow: row wrap;
+  box-shadow: 0 0.5rem 3rem 1rem rgba(19, 16, 71, 0.06), 0 6rem 5rem -3rem rgba(62, 33, 9, 0.3);
+}
+
+.first-div {
+  background-color: #fff;
+  flex: 1 1 100%;
+  padding: 4rem;
+}
+
+.first-div .heading {
+  color: #2ab2af;
+}
+
+.first-div .green {
+  font-size: 1.8rem;
+  color: #c0df34;
+  font-weight: 700;
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.first-div .text {
+  color: #98a6bd;
+  line-height: 1.8;
+}
+
+.second-div {
+  background-color: #2ab2af;
+  flex: 1 1 29rem;
+  padding: 4rem;
+}
+
+.second-div .heading {
+  color: #fff;
+}
+
+.second-div .pr {
+  color: #e5eff5;
+  padding: 1.5rem 0 .5rem 0;
+}
+
+.second-div .pr .price {
+  display: inline-block;
+  font-size: 3.5rem;
+  color: white;
+  vertical-align: middle;
+}
+
+.second-div .pr .word {
+  padding-left: 1.5rem;
+  display: inline-block;
+  line-height: 2;
+  vertical-align: middle;
+  opacity: .5;
+}
+
+.second-div .text {
+  color: #e5eff5;
+  word-spacing: -1px;
+  margin-bottom: 2.2rem;
+}
+
+.second-div .btn,
+.second-div .btn:visited {
+  color: white;
+  font-size: inherit;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 5rem;
+  background-color: #c0df34;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+  transition: all .2s ease-in-out;
+  outline: none;
+}
+
+.second-div .btn:hover {
+  transform: translateY(-2px);
+  background-color: #c5e14c;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.second-div .btn:active {
+  transform: translateY(-1px);
+  background-color: #a5bd3d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.third-div {
+  background-color: #55c3c1;
+  flex: 1 1 29rem;
+  padding: 4rem;
+  color: #e5eff5;
+}
+
+.third-div .heading {
+  color: white;
+  padding-bottom: 1.5rem;
+}
+
+.third-div ul {
+  list-style: none;
+  opacity: .9;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer .attribution a,
+footer .attribution a:visited {
+  color: #c0df34;
+  text-decoration: none;
+  transition: color .3s ease;
+  outline: none;
+}
+
+footer .attribution a:hover {
+  color: #a4c21e;
+}
+
+@media screen and (max-width: 450px) {
+  .first-div {
+    padding: 3rem;
+  }
+
+  .second-div {
+    padding: 3rem;
+  }
+
+  .third-div {
+    padding: 3rem;
+  }
+}
