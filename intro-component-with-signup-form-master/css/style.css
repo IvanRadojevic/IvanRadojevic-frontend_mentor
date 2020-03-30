@@ -279,7 +279,7 @@ footer .attribution a:hover {
   .container {
     min-height: 100rem; } }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 362px) {
   .sign-up {
     padding: 2rem 1rem; }
     .sign-up .btn-sub {
