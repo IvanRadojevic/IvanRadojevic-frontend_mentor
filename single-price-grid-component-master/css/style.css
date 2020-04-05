@@ -77,9 +77,10 @@ body {
 
 .second-div .pr .price {
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   color: white;
   vertical-align: middle;
+  font-weight: 700;
 }
 
 .second-div .pr .word {
@@ -100,6 +101,7 @@ body {
 .second-div .btn:visited {
   color: white;
   font-size: inherit;
+  font-weight: 700;
   width: 100%;
   border: none;
   border-radius: 5px;
