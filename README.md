@@ -5,7 +5,7 @@ Challenge is all about building projects so they look as close as possible as a 
 All finished challenges can be seen on this [link][1]
 
 
-## List of Finished Projects
+## List of Finished Challenges
 
 1. [Four card feature section][2]
 
