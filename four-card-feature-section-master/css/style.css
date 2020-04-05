@@ -1,21 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap");
+
 *::after,
 *::before,
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #a3a5ae; }
+  color: #a3a5ae;
+}
 
 .section-cards {
   margin: 0 auto;
@@ -25,30 +29,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0.5rem 3rem 1rem rgba(175, 182, 217, 0.2), 0 6rem 5rem -3rem rgba(175, 182, 217, 0.5); }
+  box-shadow: 0 0.5rem 3rem 1rem rgba(175, 182, 217, 0.2), 0 6rem 5rem -3rem rgba(175, 182, 217, 0.5);
+}
 
 .cards-feature__box {
   text-align: center;
   padding: 7.5rem 0 5rem 0;
-  max-width: 55rem; }
+  max-width: 55rem;
+}
 
 .heading-primary {
   font-size: 3.5rem;
   font-weight: 200;
   color: #4c4e61;
-  padding-bottom: 2rem; }
-  .heading-primary--bold {
-    display: block;
-    font-weight: 600; }
+  padding-bottom: 2rem;
+}
+
+.heading-primary--bold {
+  display: block;
+  font-weight: 600;
+}
 
 .title-text {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 .cards {
   padding: 0 3rem 10rem 3rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .card {
   background-color: #fff;
@@ -59,75 +70,118 @@ body {
   border-radius: 4px;
   box-shadow: 0 15px 20px rgba(175, 182, 217, 0.2), 0 25px 25px -15px rgba(175, 182, 217, 0.6);
   display: flex;
-  flex-direction: column; }
-  .card--1 {
-    border-top: 4px solid #45d3d3;
-    transform: translateY(55%); }
-  .card--2 {
-    border-top: 4px solid #ea5353; }
-  .card--3 {
-    border-top: 4px solid #549ef2;
-    transform: translateY(55%); }
-  .card--4 {
-    border-top: 4px solid #fcaf4a; }
-  .card__title {
-    color: #4c4e61;
-    padding-bottom: 1rem;
-    text-transform: capitalize; }
-  .card__text {
-    max-width: 26rem;
-    font-size: 1.3rem;
-    line-height: 1.8; }
-  .card__img {
-    display: inline-block;
-    align-self: flex-end;
-    padding-top: 3rem; }
-    .card__img-svg {
-      width: 7rem;
-      height: 7rem; }
+  flex-direction: column;
+}
 
-.attribution {
+.card--1 {
+  border-top: 4px solid #45d3d3;
+  transform: translateY(55%);
+}
+
+.card--2 {
+  border-top: 4px solid #ea5353;
+}
+
+.card--3 {
+  border-top: 4px solid #549ef2;
+  transform: translateY(55%);
+}
+
+.card--4 {
+  border-top: 4px solid #fcaf4a;
+}
+
+.card__title {
   color: #4c4e61;
-  padding: 5rem 2rem;
-  text-align: center; }
-  .attribution a,
-  .attribution a:visited {
-    color: #45d3d3;
-    text-decoration: none;
-    transition: color .3s ease;
-    outline: none; }
-  .attribution a:hover {
-    color: #acecec; }
+  padding-bottom: 1rem;
+  text-transform: capitalize;
+}
 
+.card__text {
+  max-width: 26rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.card__img {
+  display: inline-block;
+  align-self: flex-end;
+  padding-top: 3rem;
+}
+
+.card__img-svg {
+  width: 7rem;
+  height: 7rem;
+}
+
+/* MY FOOTER  START*/
+.footer-section {
+  text-align: center;
+  padding: 5rem 2rem 5rem 2rem;
+  word-spacing: 2px;
+}
+
+.footer-section a,
+.footer-section a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(223, 55%, 69%);
+}
+
+.footer-section a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(223, 68%, 49%);
+}
+
+/* MY FOOTER  END*/
 @media screen and (max-width: 1169px) {
   .cards {
-    padding-bottom: 20rem; } }
+    padding-bottom: 20rem;
+  }
+}
 
 @media screen and (max-width: 840px) {
   .cards-feature__box {
     margin-left: 4.5rem;
     margin-right: 4.5rem;
-    max-width: 50rem; }
+    max-width: 50rem;
+  }
+
   .cards {
-    padding-bottom: 6.5rem; }
+    padding-bottom: 6.5rem;
+  }
+
   .card {
-    max-width: 50rem; }
-    .card:not(:last-child) {
-      margin-bottom: 3rem; }
-    .card--1 {
-      transform: translateY(0%); }
-    .card--3 {
-      transform: translateY(0%); } }
+    max-width: 50rem;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .card--1 {
+    transform: translateY(0%);
+  }
+
+  .card--3 {
+    transform: translateY(0%);
+  }
+}
 
 @media screen and (max-width: 500px) {
   .cards-feature__box {
     margin-left: 0;
     margin-right: 0;
-    padding-top: 7.5rem; }
+    padding-top: 7.5rem;
+  }
+
   .heading-primary {
-    font-size: 2.3rem; }
+    font-size: 2.3rem;
+  }
+
   .cards-feature__box {
     padding-left: 3rem;
-    padding-right: 3rem; }
-  .attribution {
-    font-size: 1.3rem; } }
+    padding-right: 3rem;
+  }
+}

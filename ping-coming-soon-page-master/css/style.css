@@ -1,0 +1,258 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    max-width: 144rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0.5rem 3rem 1rem rgba(175, 182, 217, 0.2),
+        0 6rem 5rem -3rem rgba(175, 182, 217, 0.5)
+}
+
+.coming-soon-section {
+    max-width: 63.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8.5rem 3rem 5rem 3rem;
+}
+
+.heading {
+    font-size: 4.7rem;
+    padding: 5rem 0 2rem 0;
+    color: hsl(209, 33%, 12%);
+}
+
+.heading span {
+    font-weight: 300;
+    color: #949494;
+}
+
+.info {
+    padding-bottom: 3.5rem;
+    font-size: 1.9rem;
+    color: #4f5555;
+    font-weight: 600;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 9rem;
+    width: 100%;
+}
+
+.form-group input {
+    border-radius: 3rem;
+    width: 67%;
+    padding: 1.8rem 3rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    font-weight: 600;
+
+}
+
+.form-group input::placeholder {
+    color: hsl(223, 100%, 88%);
+
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+.form-group label {
+    position: absolute;
+    top: 6.8rem;
+    left: 3rem;
+    color: hsl(0, 61%, 63%);
+    font-size: 1.4rem;
+    font-style: italic;
+    opacity: 0;
+    display: none;
+}
+
+.btn {
+    margin-left: 2%;
+    width: 30%;
+    padding: 1.8rem 3rem;
+    border-radius: 3rem;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(43, 86, 194, 0.4);
+    transition: .3s ease all;
+}
+
+.btn:hover,
+.btn:focus {
+    box-shadow: 0 6px 20px rgba(43, 86, 194, 0.4);
+    background-color: hsl(223, 88%, 69%);
+    transform: translateY(-2px);
+    outline: none;
+}
+
+.btn:active {
+    box-shadow: 0 2px 10px rgba(43, 86, 194, 0.5);
+    background-color: hsl(223, 68%, 49%);
+    transform: translateY(-1px);
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.social-icons-container {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-icons-container a,
+.social-icons-container a:visited {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    text-decoration: none;
+    color: hsl(223, 87%, 63%);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgba(150, 150, 150, 0.26);
+    transition: .2s ease-in all;
+}
+
+.social-icons-container a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.social-icons-container a:hover {
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    color: white;
+}
+
+.footer {
+    padding-top: 3rem;
+    color: rgba(150, 150, 150, 0.832);
+    font-size: 1.5rem;
+}
+
+/* MY FOOTER  START*/
+.footer-section {
+    text-align: center;
+    padding: 5rem 2rem 5rem 2rem;
+    word-spacing: 2px;
+}
+
+.footer-section a,
+.footer-section a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(223, 55%, 69%);
+}
+
+.footer-section a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: hsl(223, 68%, 49%);
+}
+
+/* MY FOOTER  END*/
+
+@media only screen and (max-width: 568px) {
+
+    .logo-container {
+        width: 5.5rem;
+    }
+
+    .logo-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .heading {
+        font-size: 2.3rem;
+        padding: 5rem 0 1.5rem 0;
+
+    }
+
+    .info {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 7rem;
+        width: 100%;
+    }
+
+    .form-group input {
+        width: 93%;
+        padding: 1.2rem 3rem;
+        border: 1px solid hsl(223, 100%, 88%);
+        font-weight: 600;
+        font-size: 1.4rem;
+
+    }
+
+
+    .form-group label {
+        position: relative;
+        top: .5rem;
+        left: 0;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        margin-top: 1rem;
+        margin-left: 0;
+        width: 93%;
+        font-size: 1.4rem;
+        padding: 1.2rem 3rem;
+
+    }
+
+    .social-icons-container {
+        margin-top: 10rem;
+    }
+
+    .footer {
+        color: rgba(150, 150, 150, 1);
+        font-size: 1.2rem;
+    }
+
+}

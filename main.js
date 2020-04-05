@@ -6,6 +6,7 @@
         ["base-apparel-coming-soon-master", 'HTML,CSS,JS'],
         ["intro-component-with-signup-form-master", 'HTML,CSS,JS'],
         ["single-price-grid-component-master", 'HTML,CSS'],
+        ["ping-coming-soon-page-master", 'HTML,CSS,JS']
     ]
 
     projectArr.forEach((project, index) => {

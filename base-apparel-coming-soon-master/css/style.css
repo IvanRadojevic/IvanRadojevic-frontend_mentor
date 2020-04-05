@@ -198,24 +198,27 @@ body {
   background-size: cover;
 }
 
-footer .attribution {
-  width: 100%;
-  color: rgba(65, 58, 58, 0.7);
-  padding: 6rem 3.3rem 5rem 3.3rem;
+/* MY FOOTER  START*/
+.footer-section {
   text-align: center;
+  padding: 5rem 2rem 5rem 2rem;
+  word-spacing: 2px;
 }
 
-footer .attribution a,
-footer .attribution a:visited {
-  color: #ce9797;
+.footer-section a,
+.footer-section a:visited {
+  font-weight: bold;
   text-decoration: none;
-  transition: color .3s ease;
-  outline: none;
+  color: hsl(223, 55%, 69%);
 }
 
-footer .attribution a:hover {
-  color: #f96262;
+.footer-section a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(223, 68%, 49%);
 }
+
+/* MY FOOTER  END*/
 
 @media only screen and (max-width: 1240px) {
   .lp__left {

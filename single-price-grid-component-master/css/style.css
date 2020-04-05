@@ -141,24 +141,27 @@ body {
   line-height: 1.4;
 }
 
-footer {
-  width: 100%;
+/* MY FOOTER  START*/
+.footer-section {
   text-align: center;
-  padding: 2rem 0;
+  padding: 5rem 2rem 5rem 2rem;
+  word-spacing: 2px;
 }
 
-footer .attribution a,
-footer .attribution a:visited {
-  color: #c0df34;
+.footer-section a,
+.footer-section a:visited {
+  font-weight: bold;
   text-decoration: none;
-  transition: color .3s ease;
-  outline: none;
+  color: hsl(223, 55%, 69%);
 }
 
-footer .attribution a:hover {
-  color: #a4c21e;
+.footer-section a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: hsl(223, 68%, 49%);
 }
 
+/* MY FOOTER  END*/
 @media screen and (max-width: 450px) {
   .first-div {
     padding: 3rem;
