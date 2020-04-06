@@ -5,7 +5,7 @@ Challenge is all about building projects so they look as close as possible as a 
 All finished challenges can be seen on this [link][1]
 
 
-## List of Finished Projects
+## List of Finished Challenges
 
 1. [Four card feature section][2]
 
@@ -13,8 +13,9 @@ All finished challenges can be seen on this [link][1]
 
 1. [Intro component with signup form][4]
 
-
 1. [Single price grid component][5]
+
+1. [Ping coming soon page][6]
 
 1. Work in progress
 
@@ -28,3 +29,4 @@ All finished challenges can be seen on this [link][1]
 [3]: https://youthful-babbage-67cb27.netlify.com/base-apparel-coming-soon-master/index.html
 [4]: https://youthful-babbage-67cb27.netlify.com/intro-component-with-signup-form-master/index.html
 [5]: https://youthful-babbage-67cb27.netlify.com/single-price-grid-component-master/index.html
+[6]: https://youthful-babbage-67cb27.netlify.com/ping-coming-soon-page-master/index.html
